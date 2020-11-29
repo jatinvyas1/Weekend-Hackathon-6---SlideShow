@@ -32,7 +32,7 @@ const App = ({ slides }) => {
         onClick={() => {
           handleClick(-1);
         }}
-        disabled={currentIndex === 0 ? false : true}
+        disabled={currentIndex !== 0 ? false : true}
       >
         Prev
       </button>
@@ -41,9 +41,9 @@ const App = ({ slides }) => {
         onClick={() => {
           handleClick(0);
         }}
-        disabled={currentIndex === 0 ? false : true}
+        disabled={currentIndex !== 0 ? false : true}
       >
-        Reset
+        Restart
       </button>
     </>
   );
